@@ -1,0 +1,18 @@
+Things i should do:
+
+PIN CONTROL
+1. host can ask for a pin
+2. board can report a pin status
+
+3. host can send commands to arduino
+4. board can listen for inputs over serial at certain times
+*: these commands would be preprogrammed on the board, so "0x0A 0x07" could mean "activate pin 7" or "call function_name()", etc.
+
+5. host can listen for commands from arduino over serial
+6. board can push commands to host
+*: these commands would also be preprogrammed on the host, so "0x0A 0xFF 0x14" could mean "write to this file" or "run premade program", etc.
+
+7. there are a few premade "responders" (programs that read serial input and do something based on what it is) for both the host and the board.
+   - pins 1/0 utility for board (set pin as output, set pin status
+   - file write utility for host
+   
